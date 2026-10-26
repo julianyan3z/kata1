@@ -12,4 +12,13 @@ public record Person(String name, LocalDate birthday) {
     private int age(){
         return toYears(LocalDate.now().toEpochDay() - birthday.toEpochDay());
     }
+
+    @Override
+    public String toString() {
+        return "Person2{" +
+                "name='" + name + '\'' +
+                ", birthday=" + birthday +
+                ", age=" + age() +
+                '}';
+    }
 }
