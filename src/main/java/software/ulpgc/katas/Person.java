@@ -10,7 +10,7 @@ public record Person(String name, LocalDate birthday) {
     }
 
     public int age(){
-        return toYears(LocalDate.now().toEpochDay() - birthday.toEpochDay());
+        return toYears( LocalDate.now().toEpochDay() - birthday.toEpochDay());
     }
 
 }
